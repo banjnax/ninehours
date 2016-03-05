@@ -78,6 +78,7 @@ class MyUser(AbstractBaseUser):
 class Shipment(models.Model):
     identifier = models.ForeignKey(MyUser)
     flag = models.IntegerField()
+    type = models.CharField()
 
 
 class Interval(models.Model):
